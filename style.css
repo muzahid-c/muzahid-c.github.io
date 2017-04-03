@@ -141,7 +141,7 @@ body {
 }
 
 a:link, a:visited {
-	color: #666666;
+	color: #0000aa;
 	text-decoration: none;
 	}
 
@@ -154,7 +154,7 @@ a:link, a:visited {
 }
 
 .paperTitle {
-	margin: auto;
+	margin: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
 	font-size: 10pt;
