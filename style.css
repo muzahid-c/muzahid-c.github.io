@@ -1,9 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('http://fonts.googleapis.com/css?family=Arimo');
 
 /* Main Body */
 body {
-	font-family: 'Open Sans', Raleway, sans-serif;
-	font-size: 11px;
+	font-family: 'Arimo', sans-serif;
+	font-size: 12pt;
 	background: #f3f3f3;
 	}
 
@@ -103,7 +104,7 @@ body {
 	width: 680px;
 	margin-top: 15px;
 	overflow: auto;
-	font-size: 11pt;
+	font-size: 12pt;
 }
 
 #content h2 {
@@ -112,7 +113,7 @@ body {
 	}
 
 #content p {
-	font-size: 11pt;
+	font-size: 12pt;
 	}
 
 .job_left {
@@ -139,7 +140,7 @@ body {
 	padding-left: 15pt;
 }
 
-#content a, a:visited {
+a:link, a:visited {
 	color: #666666;
 	text-decoration: none;
 	}
@@ -148,6 +149,29 @@ body {
 	color: #000000;
 	}
 
+.paperItem {
+	margin-top:1em;
+}
+
+.paperTitle {
+	margin: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-size: 10pt;
+}
+
+.paperTitle h3 {
+	font-size: 10pt;
+	font-weight: 400;
+	margin: 0;
+	padding-bottom: 0px;
+	font-style: italic;
+	color: #0000AA;
+}
+
+.paperTitle a:link {
+	color: #0000AA;
+}
 
 /* footer */
 #footer {
