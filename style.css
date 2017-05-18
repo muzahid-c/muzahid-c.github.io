@@ -101,7 +101,7 @@ body {
 
 /* Main Content */
 #content {
-	width: 680px;
+	width: 710px;
 	margin-top: 15px;
 	overflow: auto;
 	font-size: 12pt;
@@ -151,16 +151,20 @@ a:link, a:visited {
 
 .paperItem {
 	margin-top:1em;
+	overflow: hidden;
+	padding-bottom: 10px;
 }
 
-.paperTitle {
+.paperItem .paperTitle {
 	margin: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
 	font-size: 10pt;
+	width: 65%;
+	float: left;
 }
 
-.paperTitle h3 {
+.paperItem .paperTitle h3 {
 	font-size: 10pt;
 	font-weight: 400;
 	margin: 0;
@@ -169,8 +173,13 @@ a:link, a:visited {
 	color: #0000AA;
 }
 
-.paperTitle a:link {
+.paperItem .paperTitle a:link {
 	color: #0000AA;
+}
+
+.paperItem .paperIcon {
+	width: 30%;
+	float: right;
 }
 
 /* footer */
