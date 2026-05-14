@@ -65,7 +65,8 @@
                                         const posts = data.items.slice(0, 5);
                                         let html = '';
                                         posts.forEach(post => {
-                                                let desc = post.description.replace(/<img[^>]*>/g, '');
+                                                let desc = post.description.replace(/<figure[^>]*>[\s\S]*?<\/figure>/gi, '');
+                                                desc = desc.replace(/<img[^>]*>/g, '');
                                                 desc = desc.replace(/<[^>]*>/g, '');
                                                 desc = desc.substring(0, 200) + (desc.length > 200 ? '...' : '');
                                                 
