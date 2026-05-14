@@ -238,6 +238,7 @@ a:link, a:visited {
 	clear: ;
 }
 
+
 .thumbnail{
 
 	padding: 4px;
@@ -246,4 +247,29 @@ a:link, a:visited {
 	margin-right: 10px;
 	margin-bottom: 15px;
 	clear: none;
+}
+
+.postItem {
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #eee;
+}
+.postItem h3 {
+	font-size: 14pt;
+	font-weight: 400;
+	margin: 0 0 8px 0;
+	color: #0000AA;
+}
+.postItem h3 a {
+	color: #0000AA;
+	text-decoration: none;
+}
+.postItem h3 a:hover {
+	color: #000000;
+}
+.postItem p {
+	font-size: 11pt;
+	color: #555;
+	line-height: 1.5;
+	margin: 0;
 }
