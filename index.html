@@ -58,29 +58,28 @@
 
 </div>
 
-		<script>
-		fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@muzahid')
-			.then(res => res.json())
-			.then(data => {
-				if (data.status === 'ok' && data.items.length > 0) {
-					const posts = data.items.slice(0, 5);
-					let html = '';
-					posts.forEach(post => {
-						let desc = post.description.replace(/<[^>]*>/g, '');
-						desc = desc.substring(0, 200) + (desc.length > 200 ? '...' : '');
-						html += '<div class="postItem">';
-						html += '<h3><a href="' + post.link + '" target="_blank">' + post.title + '</a></h3>';
-						html += '<p>' + desc + '</p>';
-						html += '</div>';
-					});
-					document.getElementById('medium-posts').innerHTML = html;
-				}
-			})
-			.catch(err => {
-				document.getElementById('medium-posts').innerHTML = '<p>Unable to load posts.</p>';
-			});
-		</script>
-	
+        <script>
+                fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@muzahid')
+                        .then(res => res.json())
+                        .then(data => {
+                                if (data.status === 'ok' && data.items.length > 0) {
+                                        const posts = data.items.slice(0, 5);
+                                        let html = '';
+                                        posts.forEach(post => {
+                                                let desc = post.description.replace(/<[^>]*>/g, '');
+                                                desc = desc.substring(0, 200) + (desc.length > 200 ? '...' : '');
+                                                html += '<div class="postItem">';
+                                                html += '<h3><a href="' + post.link + '" target="_blank">' + post.title + '</a></h3>';
+                                                html += '<p>' + desc + '</p>';
+                                                html += '</div>';
+                                        });
+                                        document.getElementById('medium-posts').innerHTML = html;
+                                }
+                        })
+                        .catch(err => {
+                                document.getElementById('medium-posts').innerHTML = '<p>Unable to load posts.</p>';
+                        });
+        </script>
 	
 </body>
 </html>
