@@ -273,3 +273,10 @@ a:link, a:visited {
 	line-height: 1.5;
 	margin: 0;
 }
+.postDate {
+        font-size: 10pt;
+        color: #888;
+        display: block;
+        margin-bottom: 4px;
+}
+
